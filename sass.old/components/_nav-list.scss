@@ -1,0 +1,32 @@
+.nav-list {
+  display: flex;
+  @extend %list;
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav-list__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+
+  color: $main-text-color;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms $timefunction;
+
+  &:hover,
+  &:focus,
+  &--active{
+      color: $accent-color;
+  }
+}
+
