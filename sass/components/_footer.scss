@@ -1,0 +1,19 @@
+.footer {
+  background-color: $section-bg;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.adress {
+  margin-top: 20px;
+
+  color: $backup-text-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@import "./footer-form";

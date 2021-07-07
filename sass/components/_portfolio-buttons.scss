@@ -1,0 +1,37 @@
+.button-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-list__unit {
+  color: $main-text-color;
+  background-color: $secondary-bg-color;
+  min-width: 73px;
+  border: transparent;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  cursor: pointer;
+
+  transition: background-color 250ms $timefunction, color 250ms $timefunction,
+    box-shadow 250ms $timefunction;
+
+  &:hover,
+  &:focus {
+    color: $backup-text-color;
+    background-color: $accent-color;
+    box-shadow: $button-box-shadow;
+  }
+}
