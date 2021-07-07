@@ -1,9 +1,20 @@
+.task {
+  display: none;
+  @media screen and(min-width: 1200px) {
+    display: block;
+  }
+}
+
 .task__list {
   @extend %list;
-  display: flex;
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 .task__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and(min-width:1200px) {
+    margin-right: 30px;
+  }
 }
 
 .card {
@@ -12,7 +23,7 @@
 }
 .card__img {
   display: block;
-  max-width: 370px;
+  width: 100%;
 }
 
 .card__overlay {

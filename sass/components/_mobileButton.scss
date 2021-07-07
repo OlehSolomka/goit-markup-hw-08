@@ -1,0 +1,24 @@
+.mobile-button {
+  display: inline-block;
+  padding: 0;
+  background-color: #fff;
+  margin-left: auto;
+  border: transparent;
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+
+  &:hover > svg,
+  &:active > svg {
+    fill: $accent-color;
+  }
+}
+.mobile-button--close {
+  display: none;
+}
+.mobile-button.is-open .mobile-button--close {
+  display: inline-block;
+}
+.mobile-button.is-open .mobile-button--open {
+  display: none;
+}

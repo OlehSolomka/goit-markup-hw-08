@@ -1,10 +1,44 @@
 .button-list {
   @extend %list;
+  @media screen and(max-width:419px) {
+    display: block;
+  }
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media screen and(min-width:768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
+.button-list__item {
+  @media screen and(max-width:419px) {
+    width: 100%;
+  }
+}
+
+.button-list__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 15px;
+
+  @media screen and(max-width: 419px) {
+    margin-bottom: 0;
+  }
+  @media screen and(min-width:768px) {
+
+    margin-bottom: 0;
+  }
+}
+
 .button-list__item:not(:last-child) {
+  @media screen and(max-width:419px) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
   margin-right: 8px;
 }
 
@@ -27,6 +61,10 @@
 
   transition: background-color 250ms $timefunction, color 250ms $timefunction,
     box-shadow 250ms $timefunction;
+
+  @media screen and(max-width:419px) {
+    width: 100%;
+  }
 
   &:hover,
   &:focus {

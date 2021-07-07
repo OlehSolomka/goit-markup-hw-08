@@ -2,10 +2,37 @@
   background-color: $section-bg;
   padding-bottom: 60px;
   padding-top: 60px;
+  @media screen and(max-width:419px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 }
+.footer__wrapper {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
+}
+
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and(max-width:1199px) {
+    text-align: center;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-sotial {
+  @media screen and(min-width:1200px) {
+  margin-left: 70px;
+  }
 }
 .adress {
   margin-top: 20px;

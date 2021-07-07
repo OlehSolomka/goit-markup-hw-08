@@ -5,9 +5,16 @@
 }
 .team__list {
   @extend %list;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and(min-width:1200px) {
+    margin: 0%;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 .team__item {
   background-color: $main-bg-color;
@@ -15,19 +22,32 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and(min-width:768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and(min-width:1200px) {
+    margin: 0;
+    flex-basis: 100%;
+
+    &:not(:last-child){
+      margin-right: 30px;
+    }
   }
 }
 
 .team__img {
   display: block;
-  max-width: 270px;
+  width: 100%;
 }
 
 .member {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  text-align: center;
+  @media screen and(min-width:1200px) {
+    padding-bottom: 30px;
+  }
 
   &__name {
     margin-bottom: 10px;
@@ -38,10 +58,10 @@
     letter-spacing: 0.03em;
   }
   &__position {
-      font-size: 16px;
-      line-height: 1.2;
-      letter-spacing: 0.03em;
-      
-      color: $secondary-text-color;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-color;
   }
 }

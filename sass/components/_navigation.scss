@@ -1,6 +1,13 @@
 .navigation {
-  display: flex;
   @extend %list;
+  display: none;
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+  }
   &__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -30,7 +37,7 @@
   }
 
   &--active::after {
-    display: inline-block;
+    display: block;
     content: "";
     width: 100%;
     height: 4px;
@@ -39,8 +46,5 @@
 
     position: absolute;
     bottom: 0%;
-    right: -50%;
-    transform: translateX(-50%);
-    opacity: 1;
   }
 }

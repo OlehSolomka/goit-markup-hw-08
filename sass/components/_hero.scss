@@ -1,25 +1,41 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   text-align: center;
 
-  background-image: linear-gradient(to right, $gradient, $gradient),
-    url("../img/background.jpg");
+  background-image: linear-gradient(to right, $gradient, $gradient);
 
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  &__header {
-    color: $backup-text-color;
+  @media screen and(min-width:1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, $gradient, $gradient), url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
+  &__header {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 28px;
+    line-height: 1.6;
     letter-spacing: 0.06em;
+
+    color: $backup-text-color;
+    text-transform: uppercase;
+    @media screen and(min-width:480px) {
+      font-size: 26px;
+    }
+    @media screen and(min-width:1200px) {
+      font-size: 44px;
+      line-height: 1.4;
+    }
   }
 }

@@ -1,6 +1,4 @@
 .footer-form {
-  margin-left: auto;
-
   &__text {
     margin-bottom: 20px;
 
@@ -12,16 +10,27 @@
 
     color: $backup-text-color;
   }
+  @media screen and(min-width:1200px) {
+    margin-left: auto;
+  }
+}
 
-  &__wrapper {
+.footer-form__wrapper {
+  @media screen and(min-width:1200px) {
     display: flex;
   }
 }
 
+.footer-form__field {
+  margin-bottom: 20px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
 .footer-form__field input {
   padding: 15px;
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
 
   color: rgba(255, 255, 255, 1);
   border: 1px solid $form-border-color;
@@ -29,6 +38,12 @@
   border-radius: 4px;
   background-color: inherit;
   transition: border 250ms $timefunction;
+  @media screen and(min-width:768px) {
+    width: 450px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 358px;
+  }
 
   &:hover,
   &:focus {

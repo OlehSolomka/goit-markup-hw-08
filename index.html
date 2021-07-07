@@ -30,6 +30,13 @@
             <svg class="contacts__phone-icon">
               <use href="img/icons.svg#icon-phone"></use></svg>+38 096 111 11 11</a></li>
         </ul>
+        
+              <button data-menu-button type="button" class="mobile-button is-open">
+                <svg width="40px" height="40px">
+                  <use class="mobile-button--open" href="/img/icons.svg#icon-menu-open"></use>
+                  <use class="mobile-button--close" href="/img/icons.svg#icon-menu-close"></use>
+                </svg>
+              </button>
       </div>
     </header>
     <main>
@@ -47,7 +54,7 @@
                 </svg>
               </div>
               <h3 class="description__label">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              <p class="description__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="description__item">
               <div class="description__thumb">
@@ -56,7 +63,7 @@
                 </svg>
               </div>
               <h3 class="description__label">ПУНКТУАЛЬНОСТЬ</h3>
-              <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              <p class="description__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="description__item">
               <div class="description__thumb">
@@ -65,7 +72,7 @@
                 </svg>
               </div>
               <h3 class="description__label">ПЛАНИРОВАНИЕ</h3>
-              <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              <p class="description__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="description__item">
               <div class="description__thumb">
@@ -74,7 +81,7 @@
                 </svg>
               </div>
               <h3 class="description__label">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <p class="description__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -269,42 +276,42 @@
           <div class="container">
             <h2 class="section__header">Постоянные клиенты</h2>
             <ul class="client_list">
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link">
                   <svg class="client__icon">
                     <use href="img/icons.svg#icon-companyone"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link">
                   <svg class="client__icon">
                     <use href="img/icons.svg#icon-companytwo"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link">
                   <svg class="client__icon">
                     <use href="img/icons.svg#icon-companythree"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link">
                   <svg class="client__icon">
                     <use href="img/icons.svg#icon-companyfour"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link">
                   <svg class="client__icon">
                     <use href="img/icons.svg#icon-companyfive"></use>
                   </svg>
                 </a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link">
                   <svg class="client__icon">
                     <use href="img/icons.svg#icon-companysix"></use>
@@ -318,13 +325,16 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
+        <div class="footer__wrapper">
           <div>
-          <a href="index.html" class="logo">Web<span class="logo__footer">Studio</span></a>
-          <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="contacts--footer">
-            <li class="contacts__item--footer"><a href="mailto:info@example.com" class="contacts__link--footer">info@example.com</a></li>
-            <li class="contacts__item--footer"><a href="tel:+380991111111" class="contacts__link--footer">+38 099 111 11 11</a></li>
-          </ul>
+            <a href="index.html" class="logo">Web<span class="logo__footer">Studio</span></a>
+            <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
+            <ul class="contacts--footer">
+              <li class="contacts__item--footer"><a href="mailto:info@example.com"
+                  class="contacts__link--footer">info@example.com</a></li>
+              <li class="contacts__item--footer"><a href="tel:+380991111111" class="contacts__link--footer">+38 099 111 11 11</a>
+              </li>
+            </ul>
           </div>
           <div class="footer-sotial">
             <p class="footer-sotial__text">ПРИСОИДЕНЯЙТЕСЬ</p>
@@ -359,7 +369,8 @@
               </li>
             </ul>
           </div>
-          <div class="footer-form">
+        </div>
+        <div class="footer-form">
             <p class="footer-form__text">Подпишитесь на рассылку</p>
             <div class="footer-form__wrapper">
               <form action="#" class="footer-form__field">
@@ -437,5 +448,6 @@
     </div>
     
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
