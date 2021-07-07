@@ -11,20 +11,28 @@
 %container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding: 0px 15px;
+  @media screen and(min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and(min-width: 768px ) {
+    width: 768px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 1200px;
+  }
 }
-%section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-%section__header {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+// %section {
+//   padding-bottom: 94px;
+//   padding-top: 94px;
+// }
+// %section__header {
+//   margin-bottom: 50px;
+//   font-size: 36px;
+//   line-height: 1.2;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+// }
 %logo {
   display: inline-block;
   color: $main-logo-color;

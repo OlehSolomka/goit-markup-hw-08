@@ -20,12 +20,12 @@ p {
 .container {
   @extend %container;
 }
-.section {
-  @extend %section;
-}
-.section__header {
-  @extend %section__header;
-}
+// .section {
+//   @extend %section;
+// }
+// .section__header {
+//   @extend %section__header;
+// }
 .logo {
   @extend%logo;
 }
