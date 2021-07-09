@@ -7,21 +7,76 @@
 
   text-align: center;
 
-  background-image: linear-gradient(to right, $gradient, $gradient);
+  background-image: linear-gradient(to right, $gradient, $gradient),
+    url("/img/mobile/m.headerbg-x1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media screen and(min-device-pixel-ratio:2),
+    screen and(min-resolution:192dpi),
+    screen and(min-resolution:2dppx) {
+    background-image: linear-gradient(to right, $gradient, $gradient),
+      url("/img/mobile/m.headerbg-x2.jpg");
+  }
+  @media screen and(min-device-pixel-ratio:3),
+    screen and(min-resolution:288dpi),
+    screen and(min-resolution:3dppx) {
+    background-image: linear-gradient(to right, $gradient, $gradient),
+      url("/img/mobile/m.headerbg-x3.jpg");
+  }
+
+
+
+  @media screen and(min-width:568px) {
+    background-image: linear-gradient(to right, $gradient, $gradient),
+      url("/img/tablet/t.headerbg-x1.jpg");
+  }
+  @media screen and(min-width:568px) and(min-device-pixel-ratio:2),
+    screen and(min-width:568px) and(min-resolution:192dpi),
+    screen and(min-width:568px) and(min-resolution:2dppx) {
+    background-image: linear-gradient(to right, $gradient, $gradient),
+      url("/img/tablet/t.headerbg-x2.jpg");
+  }
+  @media screen and(min-width:568px) and(min-device-pixel-ratio:3),
+    screen and(min-width:568px) and(min-resolution:288dpi),
+    screen and(min-width:568px) and(min-resolution:3dppx) {
+    background-image: linear-gradient(to right, $gradient, $gradient),
+      url("/img/tablet/t.headerbg-x3.jpg");
+  }
+
+
+
 
   @media screen and(min-width:1200px) {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, $gradient, $gradient), url("/img/background.jpg");
+    background-image: linear-gradient(to right, $gradient, $gradient),
+      url("/img/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
+   @media screen and(min-width:1200px) and(min-device-pixel-ratio:2),
+    screen and(min-width:1200px) and(min-resolution:192dpi),
+    screen and(min-width:1200px) and(min-resolution:2dppx) {
+    background-image: linear-gradient(to right, $gradient, $gradient),
+      url("/img/d.headerbg-x2.jpg");
+  }
+  @media screen and(min-width:1200px) and(min-device-pixel-ratio:3),
+    screen and(min-width:1200px) and(min-resolution:288dpi),
+    screen and(min-width:1200px) and(min-resolution:3dppx) {
+    background-image: linear-gradient(to right, $gradient, $gradient),
+      url("/img/d.headerbg-x3.jpg");
+  }
 
+
+
+
+
+  
   &__header {
     font-weight: 900;
     font-size: 28px;

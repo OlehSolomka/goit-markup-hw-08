@@ -86,6 +86,10 @@ p {
   }
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .navigation, .contacts, .contacts--footer, .description__list, .task__list, .sotial, .footer-sotial__list, .team__list, .client_list, .button-list, .grid {
   text-decoration: none;
   list-style: none;
@@ -367,11 +371,48 @@ p {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/mobile/m.headerbg-x1.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/mobile/m.headerbg-x1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid #000000;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/mobile/m.headerbg-x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/mobile/m.headerbg-x2.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/mobile/m.headerbg-x3.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/mobile/m.headerbg-x3.jpg");
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/tablet/t.headerbg-x1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/tablet/t.headerbg-x1.jpg");
+  }
+}
+
+@media screen and (min-width: 568px) and (min-device-pixel-ratio: 2), screen and (min-width: 568px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 568px) and (min-resolution: 192dpi), screen and (min-width: 568px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/tablet/t.headerbg-x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/tablet/t.headerbg-x2.jpg");
+  }
+}
+
+@media screen and (min-width: 568px) and (min-device-pixel-ratio: 3), screen and (min-width: 568px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 568px) and (min-resolution: 288dpi), screen and (min-width: 568px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/tablet/t.headerbg-x3.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/tablet/t.headerbg-x3.jpg");
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -384,6 +425,20 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/d.headerbg-x2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/d.headerbg-x2.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 288dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/d.headerbg-x3.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/d.headerbg-x3.jpg");
   }
 }
 
@@ -543,6 +598,7 @@ p {
 .card__img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .card__overlay {
@@ -733,6 +789,7 @@ p {
 .team__img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .member {
@@ -1044,12 +1101,20 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 94px 15px;
   width: 100%;
   height: 100%;
   opacity: 1;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 0;
+  }
 }
 
 .backdrop--hidden {
@@ -1059,24 +1124,50 @@ p {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  width: 100%;
   padding: 40px;
   background-color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
+}
+
 .backdrop--hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(1.9);
-          transform: translate(-50%, -50%) scale(1.9);
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+          transform: translate(-50%, -50%) scale(1.2);
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop--hidden .modal {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 .modal__icon {
@@ -1115,9 +1206,15 @@ p {
 .form-text {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-text {
+    line-height: 1.2;
+  }
 }
 
 .form {
@@ -1238,15 +1335,21 @@ p {
 .form__policy {
   margin-top: 20px;
   text-align: center;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .form__policy {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
 .form__policy a {
   color: #2196f3;
-  margin-left: 4px;
 }
 
 .form__label input[type="checkbox"] {
@@ -1496,6 +1599,7 @@ p {
 .portfolio-card__img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 .portfolio-card__name {
@@ -1503,6 +1607,20 @@ p {
   font-size: 18px;
   line-height: 2;
   color: #212121;
+  letter-spacing: 0.06em;
+}
+
+@media screen and (max-width: 400px) {
+  .portfolio-card__name {
+    font-size: 15px;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .portfolio-card__name {
+    font-size: 17px;
+  }
 }
 
 .portfolio-card__description {
