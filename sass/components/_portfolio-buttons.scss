@@ -1,4 +1,4 @@
-.button-list {
+.filter__list {
   @extend %list;
   @media screen and(max-width:419px) {
     display: block;
@@ -15,13 +15,13 @@
     margin-bottom: 50px;
   }
 }
-.button-list__item {
+.filter__item {
   @media screen and(max-width:419px) {
     width: 100%;
   }
 }
 
-.button-list__item:not(:nth-last-child(-n + 2)) {
+.filter__item:not(:nth-last-child(-n + 2)) {
   margin-bottom: 15px;
 
   @media screen and(max-width: 419px) {
@@ -33,7 +33,7 @@
   }
 }
 
-.button-list__item:not(:last-child) {
+.filter__item:not(:last-child) {
   @media screen and(max-width:419px) {
     margin-right: 0;
     margin-bottom: 15px;
@@ -42,7 +42,7 @@
   margin-right: 8px;
 }
 
-.button-list__unit {
+.filter__btn {
   color: $main-text-color;
   background-color: $secondary-bg-color;
   min-width: 73px;

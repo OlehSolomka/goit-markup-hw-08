@@ -1,4 +1,4 @@
-.task {
+task__thumb.task {
   display: none;
   @media screen and(min-width: 1200px) {
     display: block;
@@ -17,17 +17,17 @@
   }
 }
 
-.card {
+.task__thumb {
   position: relative;
   overflow: hidden;
 }
-.card__img {
+.task__img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.card__overlay {
+.task__text {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
@@ -37,7 +37,7 @@
   color: #ffffff;
 }
 
-.card__thumb {
+.task__overlay {
   position: absolute;
   bottom: 0%;
   width: 100%;
