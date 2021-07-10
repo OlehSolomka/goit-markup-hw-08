@@ -13,12 +13,18 @@
     fill: $accent-color;
   }
 }
+
 .mobile-button--close {
-  display: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
-.mobile-button.is-open .mobile-button--close {
-  display: inline-block;
-}
-.mobile-button.is-open .mobile-button--open {
-  display: none;
-}
+// .mobile-button--close {
+//   display: none;
+// }
+// .mobile-button.is-open .mobile-button--close {
+//   display: inline-block;
+// }
+// .mobile-button.is-open .mobile-button--open {
+//   display: none;
+// }

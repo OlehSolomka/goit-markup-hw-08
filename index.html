@@ -31,12 +31,36 @@
               <use href="img/icons.svg#icon-phone"></use></svg>+38 096 111 11 11</a></li>
         </ul>
 
-              <button data-menu-button type="button" class="mobile-button is-open">
+              <button data-menu-open type="button" class="mobile-button mobile-button--open">
                 <svg width="40px" height="40px">
                   <use class="mobile-button--open" href="/img/icons.svg#icon-menu-open"></use>
-                  <use class="mobile-button--close" href="/img/icons.svg#icon-menu-close"></use>
                 </svg>
               </button>
+        <div data-menu class="mobile-menu mobile-menu--hidden">
+            <ul class="mobile-nav">
+              <li class="mobile-nav__item"><a href="#" class="mobile-nav__link mobile-nav__link--active">Студия</a></li>
+              <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Портфолио</a></li>
+              <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Контакты</a></li>
+            </ul>
+            <div class="mobile-thumb">
+              <ul class="mobile-contacts">
+                <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a></li>
+                <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__link mobile-contacts__link--mail">info@devstudio.com</a></li>
+              </ul>
+              <ul class="mobile-sotial">
+                <li class="mobile-sotial__item"><a href="" class="mobile-sotial__link">Instagram</a></li>
+                <li class="mobile-sotial__item"><a href="" class="mobile-sotial__link">Twitter</a></li>
+                <li class="mobile-sotial__item"><a href="" class="mobile-sotial__link">Facebook</a></li>
+                <li class="mobile-sotial__item"><a href="" class="mobile-sotial__link">LinkedIn</a></li>
+              </ul>
+            </div>
+            
+          <button data-menu-close class="mobile-button mobile-button--close" type="button">
+            <svg width="40px" height="40px">
+              <use href="/img/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>

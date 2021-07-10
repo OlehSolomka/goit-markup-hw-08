@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 .header__container {
@@ -17,4 +18,5 @@
 }
 
 @import "./navigation";
-@import "./mobileButton"
+@import "./mobileButton";
+@import "./mobile-menu";
