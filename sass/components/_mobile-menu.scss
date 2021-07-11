@@ -21,7 +21,7 @@
 }
 
 .mobile-nav {
-  @extend%list;
+  // @extend%list;
   margin-bottom: auto;
 
   &__item:not(:last-child) {
@@ -52,7 +52,7 @@
 }
 
 .mobile-contacts {
-  @extend %list;
+  // @extend %list;
   margin-bottom: 64px;
 
   &__item:not(:last-child) {
@@ -86,7 +86,7 @@
 }
 
 .mobile-sotial {
-  @extend%list;
+  // @extend%list;
   display: flex;
   flex-wrap: wrap;
 

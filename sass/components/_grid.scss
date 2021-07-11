@@ -1,5 +1,5 @@
 .grid {
-  @extend%list;
+  // @extend%list;
   display: block;
   @media screen and(min-width:768px) {
     display: flex;
@@ -10,10 +10,10 @@
 
 .grid__item {
   width: 100%;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-    @media screen and(min-width:768px) {
-      margin-bottom: 15;
+
+  @media screen and(max-width:767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
   @media screen and(min-width:768px) {

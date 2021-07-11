@@ -6,7 +6,7 @@
 }
 
 .task__list {
-  @extend %list;
+  // @extend %list;
   @media screen and(min-width:1200px) {
     display: flex;
   }

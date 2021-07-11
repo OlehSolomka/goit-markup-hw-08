@@ -8,11 +8,11 @@
   }
 }
 .footer__wrapper {
+  margin-bottom: 60px;
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    margin-bottom: 60px;
   }
   @media screen and(min-width:1200px) {
     margin-bottom: 0;
